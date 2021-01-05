@@ -1,1 +1,6 @@
-<p>stopwatch works!</p>
+<div>{{ hour }} : {{ minute }} : {{ second }} {{ millisecond }}</div>
+
+<button (click)="toggle()" *ngIf="!isRunning">Start</button>
+<button (click)="toggle()" *ngIf="isRunning">Stop</button>
+
+<button (click)="reset()">Reset</button>
