@@ -1,0 +1,15 @@
+.time {
+  width: 100%;
+  //   max-width: 960px;
+  //   font-size: calc((75vw - 4.5rem) / 7);
+  font-size: 10vw;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 50px;
+  //   padding: 0 16px;
+  // max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}

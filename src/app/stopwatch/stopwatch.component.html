@@ -1,6 +1,8 @@
-<div>{{ hour }} : {{ minute }} : {{ second }} {{ millisecond }}</div>
+<div class="time">{{ hour }} : {{ minute }} : {{ second }} {{ millisecond }}</div>
 
-<button (click)="toggle()" *ngIf="!isRunning">Start</button>
-<button (click)="toggle()" *ngIf="isRunning">Stop</button>
+<div class="buttons">
+  <button (click)="toggle()" *ngIf="!isRunning">Start</button>
+  <button (click)="toggle()" *ngIf="isRunning">Stop</button>
 
-<button (click)="reset()">Reset</button>
+  <button (click)="reset()">Reset</button>
+</div>

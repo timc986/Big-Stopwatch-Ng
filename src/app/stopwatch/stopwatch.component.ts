@@ -25,7 +25,7 @@ export class StopwatchComponent implements OnInit {
         this.hour = this.formatZero(Math.floor(this.time / 360000));
         this.minute = this.formatZero(Math.floor(this.time / 6000 % 60));
         this.second = this.formatZero(Math.floor(this.time / 100 % 60));
-        this.millisecond = Math.floor(this.time % 100).toString();
+        this.millisecond = this.formatZero(Math.floor(this.time % 100));
       }
     });
   }
