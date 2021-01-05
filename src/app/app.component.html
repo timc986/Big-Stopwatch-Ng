@@ -1,34 +1,36 @@
-<div class="toolbar" role="banner">
-  <!-- <span>Welcome</span> -->
-  <div class="spacer"></div>
-  <a aria-label="Dark Theme" target="_blank" rel="noopener" title="Dark Theme" (click)="onDarkTheme()">
-    <ng-container *ngIf="!isDarkTheme">
-      <svg id="dark-theme-icon" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
-        style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-        <rect width="400" height="400" fill="none" />
-        <path
-          d="M10 4c4.41 0 8 3.59 8 8s-3.59 8-8 8c-.34 0-.68-.02-1.01-.07C10.9 17.77 12 14.95 12 12s-1.1-5.77-3.01-7.93C9.32 4.02 9.66 4 10 4m0-2c-1.82 0-3.53.5-5 1.35C7.99 5.08 10 8.3 10 12s-2.01 6.92-5 8.65C6.47 21.5 8.18 22 10 22c5.52 0 10-4.48 10-10S15.52 2 10 2z"
-          fill="#fff" /></svg>
-    </ng-container>
-    <ng-container *ngIf="isDarkTheme">
-      <svg id="dark-theme-icon" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
-        style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-        <rect width="400" height="400" fill="none" />
-        <path
-          d="M12.43 2.3a9.917 9.917 0 0 0-6.63.64c-.35.16-.41.64-.1.86C8.3 5.6 10 8.6 10 12c0 3.4-1.7 6.4-4.3 8.2c-.32.22-.26.7.09.86c1.28.6 2.71.94 4.21.94c6.05 0 10.85-5.38 9.87-11.6c-.61-3.92-3.59-7.16-7.44-8.1z"
-          fill="#fff" /></svg>
-    </ng-container>
-  </a>
+<div [ngClass]="{'my-custom-theme': isDarkTheme === true}">
+  <div class="toolbar" role="banner">
+    <!-- <span>Welcome</span> -->
+    <div class="spacer"></div>
+    <a aria-label="Dark Theme" target="_blank" rel="noopener" title="Dark Theme" (click)="onDarkTheme()">
+      <ng-container *ngIf="!isDarkTheme">
+        <svg id="dark-theme-icon" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+          style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+          preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+          <rect width="400" height="400" fill="none" />
+          <path
+            d="M10 4c4.41 0 8 3.59 8 8s-3.59 8-8 8c-.34 0-.68-.02-1.01-.07C10.9 17.77 12 14.95 12 12s-1.1-5.77-3.01-7.93C9.32 4.02 9.66 4 10 4m0-2c-1.82 0-3.53.5-5 1.35C7.99 5.08 10 8.3 10 12s-2.01 6.92-5 8.65C6.47 21.5 8.18 22 10 22c5.52 0 10-4.48 10-10S15.52 2 10 2z"
+            fill="#fff" /></svg>
+      </ng-container>
+      <ng-container *ngIf="isDarkTheme">
+        <svg id="dark-theme-icon" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+          style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+          preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+          <rect width="400" height="400" fill="none" />
+          <path
+            d="M12.43 2.3a9.917 9.917 0 0 0-6.63.64c-.35.16-.41.64-.1.86C8.3 5.6 10 8.6 10 12c0 3.4-1.7 6.4-4.3 8.2c-.32.22-.26.7.09.86c1.28.6 2.71.94 4.21.94c6.05 0 10.85-5.38 9.87-11.6c-.61-3.92-3.59-7.16-7.44-8.1z"
+            fill="#fff" /></svg>
+      </ng-container>
+    </a>
+  </div>
+
+  <div class="content" role="main">
+    <app-stopwatch></app-stopwatch>
+  </div>
+
+
+
+  <!-- <router-outlet></router-outlet> -->
 </div>
-
-<div class="content" role="main">
-  <app-stopwatch></app-stopwatch>
-</div>
-
-
-
-<!-- <router-outlet></router-outlet> -->
