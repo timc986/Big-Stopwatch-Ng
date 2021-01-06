@@ -15,6 +15,7 @@ export class StopwatchComponent implements OnInit {
   public minute = '00';
   public second = '00';
   public millisecond = '00';
+  public isDarkTheme = true;
 
   constructor() { }
 
