@@ -46,15 +46,6 @@ p {
   margin: 0 16px;
 }
 
-// .toolbar #dark-theme-icon:hover {
-//   opacity: 0.8;
-//   cursor: pointer;
-// }
-
-// .toolbar #dark-theme-icon:active {
-//   opacity: 0.6;
-// }
-
 // .content {
 //   display: flex;
 //   margin: 82px auto 32px;
@@ -132,7 +123,11 @@ footer a {
   }
 }
 
-.my-custom-theme {
+.my-dark-theme {
   background-color: #333333;
   color: white;
+
+  .toolbar {
+    background-color: #2d2d2d;
+  }
 }
