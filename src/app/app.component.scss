@@ -9,6 +9,7 @@
 
 .container {
   height: 100%;
+  min-height: 520px;
 }
 
 .spacer {
@@ -51,5 +52,17 @@ footer a {
 
   .toolbar {
     background-color: #151515;
+  }
+}
+
+@media screen and (min-width: 2100px) and (max-width: 2700px) {
+  .container {
+    min-height: 900px;
+  }
+}
+
+@media screen and (min-width: 2701px) {
+  .container {
+    min-height: 1100px;
   }
 }
