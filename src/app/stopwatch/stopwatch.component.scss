@@ -31,3 +31,10 @@
   // flex-direction: column;
   // align-items: center;
 }
+
+@media screen and (max-width: 575px) {
+
+  .content {
+    margin-top: 20px;
+  }
+}
