@@ -1,7 +1,7 @@
 <div class="container" [ngClass]="{'my-dark-theme': isDarkTheme === true}">
-  <div class="toolbar" role="banner">
+  <div class="toolbar">
     <div class="spacer"></div>
-    <a aria-label="Dark Theme" target="_blank" rel="noopener" title="Dark Theme" (click)="onDarkTheme()">
+    <a aria-label="Dark Theme" title="Dark Theme" (click)="onDarkTheme()">
       <ng-container *ngIf="!isDarkTheme" class="svg-icon-container">
         <svg class="svg-icon-button" id="dark-theme-icon" height="24" data-name="Logo"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"

@@ -8,7 +8,7 @@
   </div>
 
   <div class="buttons" *ngIf="isDarkTheme">
-    <a (click)="toggle()">
+    <a (click)="toggle()" aria-label="Toggle, also works with spacebar" title="Toggle, also works with spacebar">
       <svg class="svg-icon-button" id="stopwatch-icon" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
         style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
@@ -20,7 +20,7 @@
       </svg>
     </a>
 
-    <a (click)="reset()" *ngIf="hasTime">
+    <a (click)="reset()" *ngIf="hasTime" aria-label="Reset" title="Reset">
       <svg class="svg-icon-button" id="reset-icon" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
         style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
@@ -34,7 +34,7 @@
   </div>
 
   <div class="buttons" *ngIf="!isDarkTheme">
-    <a (click)="toggle()">
+    <a (click)="toggle()" aria-label="Toggle, also works with spacebar" title="Toggle, also works with spaceba">
       <svg class="svg-icon-button" id="stopwatch-icon" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
         style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
@@ -45,7 +45,7 @@
       </svg>
     </a>
 
-    <a (click)="reset()" *ngIf="hasTime">
+    <a (click)="reset()" *ngIf="hasTime" aria-label="Reset" title="Reset">
       <svg class="svg-icon-button" id="reset-icon" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
         style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
