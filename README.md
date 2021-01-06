@@ -1,4 +1,4 @@
-# BigStopwatchNg
+# Big-Stopwatc-hNg
 
 This project is built with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
