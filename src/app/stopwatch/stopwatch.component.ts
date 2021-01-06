@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { timer } from "rxjs";
+import { CurrentUserSettingService } from '../service/current-user-setting.service';
 
 @Component({
   selector: 'app-stopwatch',
@@ -17,7 +18,11 @@ export class StopwatchComponent implements OnInit {
   public millisecond = '00';
   public isDarkTheme = true;
 
-  constructor() { }
+  constructor(
+    private currentUserSettingService: CurrentUserSettingService
+  ) {
+    this.isDarkTheme = currentUserSettingService.isDarkThemeSync;
+  }
 
   ngOnInit(): void {
     timer(0, 10).subscribe(t => {
@@ -31,6 +36,11 @@ export class StopwatchComponent implements OnInit {
         this.millisecond = this.formatZero(Math.floor(this.time % 100));
       }
     });
+    this.currentUserSettingService.isDarkTheme$.subscribe(
+      isDarkTheme => {
+        this.isDarkTheme = isDarkTheme;
+      }
+    );
   }
 
   public toggle(): void {

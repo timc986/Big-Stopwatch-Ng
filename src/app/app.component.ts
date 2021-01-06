@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { Observable } from 'rxjs/internal/Observable';
 import { CurrentUserSettingModel } from './model/current-user-setting.model';
+import { CurrentUserSettingService } from './service/current-user-setting.service';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,9 @@ export class AppComponent {
   private currentUserSettingSubject: BehaviorSubject<CurrentUserSettingModel>;
   private currentUserSetting: Observable<CurrentUserSettingModel>;
 
-  constructor() {
+  constructor(
+    private currentUserSettingService: CurrentUserSettingService
+  ) {
     const localStorageItem = localStorage.getItem(this.currentUserSettingLocalStorageName);
     if (localStorageItem) {
       this.currentUserSettingSubject = new BehaviorSubject<CurrentUserSettingModel>(JSON.parse(localStorageItem));
@@ -33,10 +36,13 @@ export class AppComponent {
         this.isDarkTheme = true;
       }
     }
+    this.currentUserSettingService.setIsDarkTheme(this.isDarkTheme);
+    this.currentUserSettingService.setIsDarkThemeSync(this.isDarkTheme);
   }
 
   public onDarkTheme(): void {
     this.isDarkTheme = !this.isDarkTheme;
+    this.currentUserSettingService.setIsDarkTheme(this.isDarkTheme);
 
     if (this.isDarkTheme) {
       const userSetting = new CurrentUserSettingModel();
