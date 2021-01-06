@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { timer } from "rxjs";
 import { CurrentUserSettingService } from '../service/current-user-setting.service';
 
@@ -55,6 +55,11 @@ export class StopwatchComponent implements OnInit {
     this.minute = '00';
     this.second = '00';
     this.millisecond = '00';
+  }
+
+  @HostListener('window:keyup.space', ['$event'])
+  onSpacebar() {
+    this.toggle();
   }
 
   private formatZero(time: number): string {
