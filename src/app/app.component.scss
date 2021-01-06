@@ -30,8 +30,15 @@
 }
 
 .toolbar #dark-theme-icon {
-  height: 35px;
-  margin: 0 16px;
+  height: 30px;
+  margin: 0px 10px 0px;
+  display: block;
+}
+
+.svg-icon-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 footer {
