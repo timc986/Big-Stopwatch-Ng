@@ -9,6 +9,7 @@ import { timer } from "rxjs";
 export class StopwatchComponent implements OnInit {
 
   public isRunning = false;
+  public hasTime = false;
   public time = 0;
   public hour = '00';
   public minute = '00';
@@ -21,6 +22,7 @@ export class StopwatchComponent implements OnInit {
     timer(0, 10).subscribe(t => {
       if (this.isRunning) {
         this.time++;
+        this.hasTime = true;
 
         this.hour = this.formatZero(Math.floor(this.time / 360000));
         this.minute = this.formatZero(Math.floor(this.time / 6000 % 60));
@@ -36,6 +38,7 @@ export class StopwatchComponent implements OnInit {
 
   public reset(): void {
     this.isRunning = false;
+    this.hasTime = false;
     this.time = 0;
     this.hour = '00';
     this.minute = '00';
