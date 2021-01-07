@@ -34,7 +34,19 @@
   }
 }
 
-@media screen and (max-height: 570px) {
+// for smaller screen laptops
+@media screen and (min-height: 700px) and (max-height: 725px) {
+  .time {
+    font-size: 15vw;
+
+    .millisecond {
+      font-size: 5vw;
+    }
+  }
+}
+
+// for phones in landscape mode
+@media screen and (max-height: 565px) {
   .time {
     font-size: 9vw;
 
@@ -44,32 +56,32 @@
   }
 }
 
-@media screen and (min-height: 571px) and (max-height: 620px) {
-  .time {
-    font-size: 11vw;
+// @media screen and (min-height: 571px) and (max-height: 620px) {
+//   .time {
+//     font-size: 11vw;
 
-    .millisecond {
-      font-size: 5vw;
-    }
-  }
-}
+//     .millisecond {
+//       font-size: 5vw;
+//     }
+//   }
+// }
 
-@media screen and (min-height: 621px) and (max-height: 670px) {
-  .time {
-    font-size: 13vw;
+// @media screen and (min-height: 621px) and (max-height: 670px) {
+//   .time {
+//     font-size: 13vw;
 
-    .millisecond {
-      font-size: 5vw;
-    }
-  }
-}
+//     .millisecond {
+//       font-size: 5vw;
+//     }
+//   }
+// }
 
-@media screen and (min-height: 671px) and (max-height: 730px) {
-  .time {
-    font-size: 15vw;
+// @media screen and (min-height: 671px) and (max-height: 730px) {
+//   .time {
+//     font-size: 15vw;
 
-    .millisecond {
-      font-size: 5vw;
-    }
-  }
-}
+//     .millisecond {
+//       font-size: 5vw;
+//     }
+//   }
+// }
