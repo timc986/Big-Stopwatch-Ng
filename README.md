@@ -1,6 +1,6 @@
-# Big-Stopwatc-hNg
+# Big-Stopwatch-Ng
 
-This project is built with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+This project is built with Angular version 11.0.5.
 
 
 ## Running unit tests
