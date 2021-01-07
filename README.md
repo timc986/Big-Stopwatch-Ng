@@ -10,7 +10,7 @@ https://timc986.github.io/Big-Stopwatch-Ng
 * Simple, clean looking and minimalistic UI
 * Dark theme and light theme
 * Responsive and mobile friendly
-* Fast and light weighted
+* Fast and lightweight (81kB only!)
 * An option to toggle the stopwatch by pressing the spacebar on your keyboard, no need for mouse clicking all the time
 
 ## Screenshots
