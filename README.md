@@ -4,9 +4,6 @@ A simple static website that only has one purpose, as its name suggests, a Big S
 
 https://timc986.github.io/Big-Stopwatch-Ng
 
-![screenshot_dark](assets/screenshot_dark.png)
-![screenshot_light](assets/screenshot_light.png)
-
 ## Features
 
 * A giant big fullscreen stopwatch
@@ -15,6 +12,12 @@ https://timc986.github.io/Big-Stopwatch-Ng
 * Responsive and mobile friendly
 * Fast and light weighted
 * An option to toggle the stopwatch by pressing the spacebar on your keyboard, no need for mouse clicking all the time
+
+## Screenshots
+
+![screenshot_dark](src/assets/screenshot_dark.png)
+
+![screenshot_light](src/assets/screenshot_light.png)
 
 ## Tech
 
