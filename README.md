@@ -1,8 +1,22 @@
-# Big-Stopwatch-Ng
+# [Big-Stopwatch-Ng](https://timc986.github.io/Big-Stopwatch-Ng)
 
-This project is built with Angular version 11.0.5.
+Website hosted on github: https://timc986.github.io/Big-Stopwatch-Ng
 
+A simple static website that only has one purpose, as its name suggests, a Big Stopwatch.
 
-## Running unit tests
+## Features
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* A giant big fullscreen stopwatch
+* Simple, clean looking and minimalistic UI
+* Dark theme and light theme
+* Responsive and mobile friendly
+* Fast and light weighted
+* Can toggle the stopwatch by pressing spacebar on your keyboard, no need for mouse clicking all the time
+
+## Tech
+
+* Built with Angular version 11.0.5
+* Material Icons from [Iconify](https://iconify.design/)
+
+## Background
+
