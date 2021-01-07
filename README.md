@@ -4,6 +4,9 @@ A simple static website that only has one purpose, as its name suggests, a Big S
 
 https://timc986.github.io/Big-Stopwatch-Ng
 
+![screenshot_dark](assets/screenshot_dark.png)
+![screenshot_light](assets/screenshot_light.png)
+
 ## Features
 
 * A giant big fullscreen stopwatch
@@ -20,7 +23,7 @@ https://timc986.github.io/Big-Stopwatch-Ng
 
 ## Background
 
-Like many software developers, I enjoy writing codes and building side projects in my own time among other hobbies. I want to have a product that is truly my contribution and can be proudly shared with family and friends. Quite often I face a common problem when starting to plan for a new project: I am excited to try out on new tech new library or simply a new update, but I am not always exactly sure what to do with it. So I have written a couple of demo projects with the likes of C# .NET Core 3.1, Angular 8 and NativeScript 6 etc in the past, but they are all demo only and I didn't actually publish them. Until last year.
+Like many software developers, I enjoy writing codes and building side projects in my own time among other hobbies. I want to have a product that is truly my contribution and can be proudly shared with family and friends. Quite often I face a common problem when starting to plan for a new project: I am excited to try out on new tech new library or simply a new update, but I am not always exactly sure what to do with it. So I have written a couple of demo projects with the likes of C# .NET Core 3.1, Angular 8 and NativeScript 6 etc in the past, but they are all demo only or sometimes failed collaboration and I didn't actually publish them. Until last year.
 
 One day I was doing my usual fitness exercises at home with an online stopwatch showing on my monitor to keep track of the exercise time. I never liked those stopwatch websites even the one that I have been using for quite sometime. Yes a stopwatch is a stopwatch, but there is something about them that feels unpleasant. Maybe it's the UI design font type font size colour, or maybe it's just that I don't enjoy my eyes being shined by the bright white light from the fullscreen all white background of the website. 
 
