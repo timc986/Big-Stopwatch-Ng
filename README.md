@@ -15,9 +15,9 @@ https://timc986.github.io/Big-Stopwatch-Ng
 
 ## Screenshots
 
-![screenshot_dark](src/assets/screenshot_dark.png)
+![screenshot_dark](readme_assets/screenshot_dark.png)
 
-![screenshot_light](src/assets/screenshot_light.png)
+![screenshot_light](readme_assets/screenshot_light.png)
 
 ## Tech
 
