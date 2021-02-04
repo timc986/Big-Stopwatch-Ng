@@ -2,7 +2,7 @@
 
 A simple static website that only has one purpose, as its name suggests, a Big Stopwatch.
 
-https://timc986.github.io/Big-Stopwatch-Ng
+Website: https://timc986.github.io/Big-Stopwatch-Ng
 
 ## Features
 
